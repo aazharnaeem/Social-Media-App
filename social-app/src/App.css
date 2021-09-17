@@ -1,0 +1,140 @@
+.login-main{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  height: 100vh;
+}
+.login-left{
+  grid-column: 1 / 5;
+  background-color: #fff;
+  background-image: url('./images/logfin.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat; 
+  text-align: center;
+  vertical-align: bottom;
+}
+
+.login-right{
+  grid-column: 5/7;
+  color: gray;
+  background-color: #fff;
+}
+
+
+.login-form{
+
+  display: table;
+  padding: 15px;
+  margin: 0 auto ;
+
+}
+
+input[type='text'],input[type='password'], input[type='email']{
+  padding: 10px;
+  border: none;
+  border-bottom: solid 1px gray;
+}
+
+.log-btn{
+  margin: 15px;
+  border-radius: 50px;
+  width: 80%;
+  height: 30px;
+  background-color:grey;
+  color: white;
+  font-weight: 600;
+  border: none;
+}
+
+#signup-left{
+  grid-column: 1 / 5;
+  background-color: rgba(255, 255, 255, 0.761);
+  background-image: url('./images/sign-mon.png');
+}
+
+label{
+  font-size: 12ps;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.Header{
+  border: solid black 1px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  position: sticky;
+  top: 0%;
+  background-color: #fff;
+  padding: 5px;
+}
+.head-lnk{
+  grid-column:  3/7;
+  padding: 20px;
+  text-align: right;
+  
+}
+.lnks{
+  text-decoration: none;
+  margin: 15px;
+  padding: 5px;
+  text-align: end;
+}
+.heading{
+  font-family: cursive;
+}
+
+
+.addPost{
+  border: solid black 1px;
+  margin: 0 auto;
+  width: 50%;
+  padding: 5px;
+}
+.postinp{
+  width: 50%;
+}
+.dropdown{
+  border:none;
+  font-size: 25px;
+  background-color: #fff;
+}
+.dropdown-content{
+  width: 10%;
+  position: absolute;
+  right: 0;
+  margin-top: 0px;
+  margin-right: 28px;
+  text-align: left;
+}
+.dropdown-content>li{
+  border: solid black 1px;
+  padding: 5px;
+  background-color: #fff;
+
+}
+@media(max-width:650px){
+  .login-left{
+    display: none;
+  }
+  .login-right{
+    display: block;
+    grid-column: 1/7;
+  }
+  .head-lnk{
+    grid-column: 7/1;
+    text-align: left;
+    text-align: center;
+
+  }
+  .heading{
+    text-align: center;
+    grid-column: 6/1;
+
+  }
+  .lnks{
+    margin: 5px;
+  }
+  .postinp{
+    size:20;
+  }
+}
+
